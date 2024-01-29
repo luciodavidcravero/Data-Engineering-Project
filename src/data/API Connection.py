@@ -1,11 +1,10 @@
-# This file generates a basic connection to Carbon Intensity API
+#This file generates a basic connection to Carbon Intensity API
 #https://carbon-intensity.github.io/api-definitions/?python#carbon-intensity-api-v2-0-0
 #This API provides an indicative trend of regional carbon intensity of the electricity system in Great Britain up to 2 days ahead of real-time
 
 #--------------------------------------------------------------------------
 #Import required libraries
 #--------------------------------------------------------------------------
-from numpy import block
 import pandas as pd
 import requests
 from datetime import datetime, timedelta
@@ -89,3 +88,4 @@ while from_date < current_date:
 df_carbon_intensity = pd.concat(dfs, ignore_index=True)
 
 #Save 6 months data to csv file
+df_carbon_intensity.to_csv('../../data/raw/df_carbon_intensity.csv')
