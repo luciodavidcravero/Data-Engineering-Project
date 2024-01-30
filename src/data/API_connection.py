@@ -23,7 +23,7 @@ from_date = '2024-01-01T00:00Z'
 to_date = '2024-01-29T23:59Z'
 from_date = datetime.fromisoformat(to_date[:-1]) - timedelta(days=30)
 from_date = from_date.strftime('%Y-%m-%dT%H:%MZ')
-block_date = 24
+block_date = 4
 full_url = f"{base_url}/{endpoint}/{from_date}/{to_date}/{block_date}"
 r = requests.get(full_url,
                  params={},
@@ -48,14 +48,14 @@ else:
 #Create table from last 6 months
 #--------------------------------------------------------------------------
 #Get current date
-current_date = datetime.now()
+current_date = datetime.utcnow()
 
 #Calculate dates
 from_date = current_date - timedelta(days=180)
 from_date_str = from_date.strftime('%Y-%m-%dT%H:%MZ')
 to_date_str = current_date.strftime('%Y-%m-%dT%H:%MZ')
 
-block_date = 24
+block_date = 4
 
 #Empty df to save each iteration data
 dfs = []
