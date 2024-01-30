@@ -1,6 +1,7 @@
-#This file generates a basic connection to Carbon Intensity API
-#https://carbon-intensity.github.io/api-definitions/?python#carbon-intensity-api-v2-0-0
-#This API provides an indicative trend of regional carbon intensity of the electricity system in Great Britain up to 2 days ahead of real-time
+'''
+This file generates a basic connection to Carbon Intensity API
+https://carbon-intensity.github.io/api-definitions/?python#carbon-intensity-api-v2-0-0
+'''
 
 #--------------------------------------------------------------------------
 #Import required libraries
@@ -76,7 +77,6 @@ while from_date < current_date:
         df_carbon_intensity = pd.json_normalize(json_data)
         dfs.append(df_carbon_intensity)
     else:
-        print(f"Failure for {from_date_str} to {to_date_str}")
         print(r.status_code)
         print(r.text)
 
