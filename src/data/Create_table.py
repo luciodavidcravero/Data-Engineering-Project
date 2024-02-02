@@ -1,5 +1,6 @@
+import pandas as pd
 from configparser import ConfigParser
-import psycopg2
+from sqlalchemy import create_engine
 
 #Read config file
 config = ConfigParser()
@@ -11,34 +12,54 @@ database = config.get('redshift', 'database')
 user = config.get('redshift', 'user')
 password = config.get('redshift', 'password')
 port = config.get('redshift', 'port')
+dbengine = config.get('redshift', 'dbengine')
 
-#Connection
-conn = psycopg2.connect(
-    host=host,
-    database=database,
-    user=user,
-    password=password,
-    port=port
-)
+# Cadena de conexión para SQLAlchemy
+conn_str = f"{dbengine}://{user}:{password}@{host}:{port}/{database}"
 
-#Create cursor
-cur = conn.cursor()
+# Crea la conexión
+engine = create_engine(conn_str)  # El parámetro 'echo' es opcional y muestra las consultas SQL generadas
+conn = engine.connect()
 
+#--------------------------------------------------------------------------
+#Create table on Redshift
+#--------------------------------------------------------------------------
 #Define SQL query
-create_table_query = '''
-CREATE TABLE IF NOT EXISTS Carbon_Intensity (
-    Test1 INT,
-    Test2 INT,
-    Test3 INT
+sql_query = '''
+CREATE TABLE IF NOT EXISTS craverolucio_coderhouse.carbon_intensity (
+    from_date VARCHAR(50) PRIMARY KEY,
+    to_date VARCHAR(50),
+    intensity_max SMALLINT,
+    intensity_average SMALLINT,
+    intensity_min SMALLINT,
+    intensity_index TEXT
 );
 '''
 
 # Ejecuta la sentencia SQL
-cur.execute(create_table_query)
+conn.execute(sql_query)
 
-# Confirma los cambios
-conn.commit()
+#--------------------------------------------------------------------------
+#Upload DataFrame to Redshift
+#--------------------------------------------------------------------------
+#Read csv file
+df_carbon_intensity = pd.read_csv('../../data/raw/df_carbon_intensity.csv')
+df_carbon_intensity = df_carbon_intensity.drop(columns='Unnamed: 0')
+df_carbon_intensity = df_carbon_intensity.rename(columns=
+                                                 {'from': 'from_date',
+                                                  'to': 'to_date',
+                                                  'intensity.max': 'intensity_max',
+                                                  'intensity.average': 'intensity_average',
+                                                  'intensity.min': 'intensity_min',
+                                                  'intensity.index': 'intensity_index'})
 
-# Cierra el cursor y la conexión
-cur.close()
-conn.close()
+#Upload to Redshift
+df_carbon_intensity.to_sql(
+    "carbon_intensity",
+    conn,
+    schema = "craverolucio_coderhouse",
+    if_exists = "append", #La opción replace elimina la tabla y la crea a gusto de Pandas
+    method = "multi", #Evita ejecutar 1 insert por cada registro
+    chunksize = 100,
+    index = False
+)
