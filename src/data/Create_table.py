@@ -1,7 +1,11 @@
+#Import required libraries
 import pandas as pd
 from configparser import ConfigParser
 from sqlalchemy import create_engine
 
+#--------------------------------------------------------------------------
+#Connection to Redshift database
+#--------------------------------------------------------------------------
 #Read config file
 config = ConfigParser()
 config.read('config.cfg')
@@ -14,11 +18,11 @@ password = config.get('redshift', 'password')
 port = config.get('redshift', 'port')
 dbengine = config.get('redshift', 'dbengine')
 
-# Cadena de conexión para SQLAlchemy
+#Cadena de conexión para SQLAlchemy
 conn_str = f"{dbengine}://{user}:{password}@{host}:{port}/{database}"
 
-# Crea la conexión
-engine = create_engine(conn_str)  # El parámetro 'echo' es opcional y muestra las consultas SQL generadas
+#Crea la conexión
+engine = create_engine(conn_str)
 conn = engine.connect()
 
 #--------------------------------------------------------------------------
@@ -32,7 +36,7 @@ CREATE TABLE IF NOT EXISTS craverolucio_coderhouse.carbon_intensity (
     intensity_max SMALLINT,
     intensity_average SMALLINT,
     intensity_min SMALLINT,
-    intensity_index TEXT
+    intensity_index VARCHAR(50)
 );
 '''
 

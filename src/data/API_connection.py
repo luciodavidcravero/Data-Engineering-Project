@@ -1,6 +1,8 @@
 '''
-This file generates a basic connection to Carbon Intensity API
+This script generates a basic connection to Carbon Intensity API
 https://carbon-intensity.github.io/api-definitions/?python#carbon-intensity-api-v2-0-0
+
+Then saves the extracted data into a csv file
 '''
 
 #--------------------------------------------------------------------------
