@@ -2,7 +2,7 @@
 Los archivos que corresponden a la primera entrega son:
 - API_connection.py (ubicación: src/data)
 - API_connection.ipynb (mismo archivo en versión notebook para facilitar la lectura. Ubicación: notebooks)
-- Create_table.py
+- Create_table.py (ubicación: src/data)
 
 ### Data Engineering Project for Coderhouse training course
 
