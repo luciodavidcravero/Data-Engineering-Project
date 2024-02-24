@@ -1,8 +1,12 @@
+### SEGUNDA ENTREGA:
+Los archivos que corresponden a la segunda entrega son:
+- Upload_data.py (ubicación: src/data)
+- Create_table_180_days.py (ubicación: src/data)
+
 ### PRIMERA ENTREGA:
 Los archivos que corresponden a la primera entrega son:
 - API_connection.py (ubicación: src/data)
 - API_connection.ipynb (mismo archivo en versión notebook para facilitar la lectura. Ubicación: notebooks)
-- Create_table.py (ubicación: src/data)
 
 ### Data Engineering Project for Coderhouse training course
 
