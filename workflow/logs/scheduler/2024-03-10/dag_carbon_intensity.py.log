@@ -10867,3 +10867,227 @@ jinja2.exceptions.TemplateNotFound: sql/create_tables.sql
 [2024-03-10T19:33:18.445+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:33:18.443+0000] {dag.py:2941} INFO - Sync 1 DAGs
 [2024-03-10T19:33:18.470+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:33:18.470+0000] {dag.py:3722} INFO - Setting next_dagrun for dag_carbon_intensity to 2024-03-10T00:00:00+00:00, run_after=2024-03-11T00:00:00+00:00
 [2024-03-10T19:33:18.537+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_carbon_intensity.py took 0.831 seconds
+[2024-03-10T19:33:29.257+0000] {processor.py:157} INFO - Started process (PID=12282) to work on /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:33:29.260+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dag_carbon_intensity.py for tasks to queue
+[2024-03-10T19:33:29.261+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:33:29.261+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:33:29.833+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dag_carbon_intensity']) retrieved from /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:33:29.875+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:33:29.874+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-03-10T19:33:29.913+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:33:29.913+0000] {dag.py:3722} INFO - Setting next_dagrun for dag_carbon_intensity to 2024-03-10T00:00:00+00:00, run_after=2024-03-11T00:00:00+00:00
+[2024-03-10T19:33:29.943+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_carbon_intensity.py took 0.691 seconds
+[2024-03-10T19:33:40.137+0000] {processor.py:157} INFO - Started process (PID=12305) to work on /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:33:40.139+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dag_carbon_intensity.py for tasks to queue
+[2024-03-10T19:33:40.142+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:33:40.141+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:33:40.650+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dag_carbon_intensity']) retrieved from /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:33:40.688+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:33:40.687+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-03-10T19:33:40.713+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:33:40.713+0000] {dag.py:3722} INFO - Setting next_dagrun for dag_carbon_intensity to 2024-03-10T00:00:00+00:00, run_after=2024-03-11T00:00:00+00:00
+[2024-03-10T19:33:40.734+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_carbon_intensity.py took 0.604 seconds
+[2024-03-10T19:33:51.293+0000] {processor.py:157} INFO - Started process (PID=12328) to work on /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:33:51.296+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dag_carbon_intensity.py for tasks to queue
+[2024-03-10T19:33:51.299+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:33:51.298+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:33:51.794+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dag_carbon_intensity']) retrieved from /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:33:51.831+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:33:51.831+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-03-10T19:33:51.871+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:33:51.871+0000] {dag.py:3722} INFO - Setting next_dagrun for dag_carbon_intensity to 2024-03-10T00:00:00+00:00, run_after=2024-03-11T00:00:00+00:00
+[2024-03-10T19:33:51.905+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_carbon_intensity.py took 0.620 seconds
+[2024-03-10T19:34:01.976+0000] {processor.py:157} INFO - Started process (PID=12351) to work on /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:34:01.978+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dag_carbon_intensity.py for tasks to queue
+[2024-03-10T19:34:01.981+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:34:01.980+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:34:02.582+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dag_carbon_intensity']) retrieved from /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:34:02.615+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:34:02.614+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-03-10T19:34:02.641+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:34:02.641+0000] {dag.py:3722} INFO - Setting next_dagrun for dag_carbon_intensity to 2024-03-10T00:00:00+00:00, run_after=2024-03-11T00:00:00+00:00
+[2024-03-10T19:34:02.664+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_carbon_intensity.py took 0.694 seconds
+[2024-03-10T19:34:13.126+0000] {processor.py:157} INFO - Started process (PID=12374) to work on /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:34:13.129+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dag_carbon_intensity.py for tasks to queue
+[2024-03-10T19:34:13.131+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:34:13.130+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:34:13.699+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dag_carbon_intensity']) retrieved from /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:34:13.734+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:34:13.734+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-03-10T19:34:13.763+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:34:13.763+0000] {dag.py:3722} INFO - Setting next_dagrun for dag_carbon_intensity to 2024-03-10T00:00:00+00:00, run_after=2024-03-11T00:00:00+00:00
+[2024-03-10T19:34:13.798+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_carbon_intensity.py took 0.676 seconds
+[2024-03-10T19:34:24.006+0000] {processor.py:157} INFO - Started process (PID=12397) to work on /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:34:24.008+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dag_carbon_intensity.py for tasks to queue
+[2024-03-10T19:34:24.010+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:34:24.009+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:34:24.702+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dag_carbon_intensity']) retrieved from /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:34:24.754+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:34:24.754+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-03-10T19:34:24.789+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:34:24.789+0000] {dag.py:3722} INFO - Setting next_dagrun for dag_carbon_intensity to 2024-03-10T00:00:00+00:00, run_after=2024-03-11T00:00:00+00:00
+[2024-03-10T19:34:24.831+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_carbon_intensity.py took 0.831 seconds
+[2024-03-10T19:34:35.636+0000] {processor.py:157} INFO - Started process (PID=12420) to work on /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:34:35.637+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dag_carbon_intensity.py for tasks to queue
+[2024-03-10T19:34:35.639+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:34:35.639+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:34:36.130+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dag_carbon_intensity']) retrieved from /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:34:36.161+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:34:36.160+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-03-10T19:34:36.186+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:34:36.186+0000] {dag.py:3722} INFO - Setting next_dagrun for dag_carbon_intensity to 2024-03-10T00:00:00+00:00, run_after=2024-03-11T00:00:00+00:00
+[2024-03-10T19:34:36.210+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_carbon_intensity.py took 0.579 seconds
+[2024-03-10T19:34:46.768+0000] {processor.py:157} INFO - Started process (PID=12443) to work on /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:34:46.770+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dag_carbon_intensity.py for tasks to queue
+[2024-03-10T19:34:46.772+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:34:46.772+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:34:47.375+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dag_carbon_intensity']) retrieved from /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:34:47.408+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:34:47.407+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-03-10T19:34:47.437+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:34:47.436+0000] {dag.py:3722} INFO - Setting next_dagrun for dag_carbon_intensity to 2024-03-10T00:00:00+00:00, run_after=2024-03-11T00:00:00+00:00
+[2024-03-10T19:34:47.461+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_carbon_intensity.py took 0.699 seconds
+[2024-03-10T19:34:57.562+0000] {processor.py:157} INFO - Started process (PID=12466) to work on /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:34:57.565+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dag_carbon_intensity.py for tasks to queue
+[2024-03-10T19:34:57.567+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:34:57.566+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:34:58.435+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dag_carbon_intensity']) retrieved from /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:34:58.474+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:34:58.473+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-03-10T19:34:58.504+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:34:58.503+0000] {dag.py:3722} INFO - Setting next_dagrun for dag_carbon_intensity to 2024-03-10T00:00:00+00:00, run_after=2024-03-11T00:00:00+00:00
+[2024-03-10T19:34:58.526+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_carbon_intensity.py took 0.971 seconds
+[2024-03-10T19:35:08.771+0000] {processor.py:157} INFO - Started process (PID=12489) to work on /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:35:08.774+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dag_carbon_intensity.py for tasks to queue
+[2024-03-10T19:35:08.776+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:35:08.775+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:35:09.376+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dag_carbon_intensity']) retrieved from /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:35:09.409+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:35:09.408+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-03-10T19:35:09.439+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:35:09.439+0000] {dag.py:3722} INFO - Setting next_dagrun for dag_carbon_intensity to 2024-03-10T00:00:00+00:00, run_after=2024-03-11T00:00:00+00:00
+[2024-03-10T19:35:09.462+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_carbon_intensity.py took 0.701 seconds
+[2024-03-10T19:35:19.778+0000] {processor.py:157} INFO - Started process (PID=12512) to work on /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:35:19.780+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dag_carbon_intensity.py for tasks to queue
+[2024-03-10T19:35:19.785+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:35:19.784+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:35:20.924+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dag_carbon_intensity']) retrieved from /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:35:20.966+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:35:20.966+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-03-10T19:35:21.048+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:35:21.048+0000] {dag.py:3722} INFO - Setting next_dagrun for dag_carbon_intensity to 2024-03-10T00:00:00+00:00, run_after=2024-03-11T00:00:00+00:00
+[2024-03-10T19:35:21.093+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_carbon_intensity.py took 1.321 seconds
+[2024-03-10T19:35:31.495+0000] {processor.py:157} INFO - Started process (PID=12535) to work on /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:35:31.497+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dag_carbon_intensity.py for tasks to queue
+[2024-03-10T19:35:31.498+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:35:31.498+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:35:32.229+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dag_carbon_intensity']) retrieved from /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:35:32.305+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:35:32.304+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-03-10T19:35:32.358+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:35:32.358+0000] {dag.py:3722} INFO - Setting next_dagrun for dag_carbon_intensity to 2024-03-10T00:00:00+00:00, run_after=2024-03-11T00:00:00+00:00
+[2024-03-10T19:35:32.391+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_carbon_intensity.py took 0.900 seconds
+[2024-03-10T19:35:42.773+0000] {processor.py:157} INFO - Started process (PID=12558) to work on /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:35:42.776+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dag_carbon_intensity.py for tasks to queue
+[2024-03-10T19:35:42.779+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:35:42.779+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:35:43.475+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dag_carbon_intensity']) retrieved from /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:35:43.531+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:35:43.528+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-03-10T19:35:43.588+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:35:43.587+0000] {dag.py:3722} INFO - Setting next_dagrun for dag_carbon_intensity to 2024-03-10T00:00:00+00:00, run_after=2024-03-11T00:00:00+00:00
+[2024-03-10T19:35:43.633+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_carbon_intensity.py took 0.867 seconds
+[2024-03-10T19:35:54.080+0000] {processor.py:157} INFO - Started process (PID=12581) to work on /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:35:54.083+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dag_carbon_intensity.py for tasks to queue
+[2024-03-10T19:35:54.085+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:35:54.085+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:35:54.932+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dag_carbon_intensity']) retrieved from /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:35:54.965+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:35:54.964+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-03-10T19:35:54.991+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:35:54.990+0000] {dag.py:3722} INFO - Setting next_dagrun for dag_carbon_intensity to 2024-03-10T00:00:00+00:00, run_after=2024-03-11T00:00:00+00:00
+[2024-03-10T19:35:55.012+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_carbon_intensity.py took 0.938 seconds
+[2024-03-10T19:36:05.394+0000] {processor.py:157} INFO - Started process (PID=12604) to work on /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:36:05.397+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dag_carbon_intensity.py for tasks to queue
+[2024-03-10T19:36:05.399+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:36:05.398+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:36:05.915+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dag_carbon_intensity']) retrieved from /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:36:05.952+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:36:05.951+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-03-10T19:36:05.985+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:36:05.984+0000] {dag.py:3722} INFO - Setting next_dagrun for dag_carbon_intensity to 2024-03-10T00:00:00+00:00, run_after=2024-03-11T00:00:00+00:00
+[2024-03-10T19:36:06.008+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_carbon_intensity.py took 0.619 seconds
+[2024-03-10T19:36:16.172+0000] {processor.py:157} INFO - Started process (PID=12610) to work on /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:36:16.173+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dag_carbon_intensity.py for tasks to queue
+[2024-03-10T19:36:16.175+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:36:16.175+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:36:16.705+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dag_carbon_intensity']) retrieved from /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:36:16.737+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:36:16.737+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-03-10T19:36:16.762+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:36:16.762+0000] {dag.py:3722} INFO - Setting next_dagrun for dag_carbon_intensity to 2024-03-10T00:00:00+00:00, run_after=2024-03-11T00:00:00+00:00
+[2024-03-10T19:36:16.786+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_carbon_intensity.py took 0.619 seconds
+[2024-03-10T19:36:26.909+0000] {processor.py:157} INFO - Started process (PID=12616) to work on /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:36:26.911+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dag_carbon_intensity.py for tasks to queue
+[2024-03-10T19:36:26.913+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:36:26.912+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:36:27.427+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dag_carbon_intensity']) retrieved from /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:36:27.469+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:36:27.468+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-03-10T19:36:27.498+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:36:27.498+0000] {dag.py:3722} INFO - Setting next_dagrun for dag_carbon_intensity to 2024-03-10T00:00:00+00:00, run_after=2024-03-11T00:00:00+00:00
+[2024-03-10T19:36:27.529+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_carbon_intensity.py took 0.624 seconds
+[2024-03-10T19:36:37.706+0000] {processor.py:157} INFO - Started process (PID=12622) to work on /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:36:37.710+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dag_carbon_intensity.py for tasks to queue
+[2024-03-10T19:36:37.717+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:36:37.712+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:36:37.775+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:36:37.771+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/dag_carbon_intensity.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_carbon_intensity.py", line 8, in <module>
+    from scripts.main_1 import load_carbon_intensity_data
+ModuleNotFoundError: No module named 'scripts.main_1'
+[2024-03-10T19:36:37.776+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:36:37.807+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_carbon_intensity.py took 0.107 seconds
+[2024-03-10T19:36:48.096+0000] {processor.py:157} INFO - Started process (PID=12627) to work on /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:36:48.101+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dag_carbon_intensity.py for tasks to queue
+[2024-03-10T19:36:48.123+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:36:48.123+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:36:48.291+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:36:48.245+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/dag_carbon_intensity.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_carbon_intensity.py", line 8, in <module>
+    from scripts.main_1 import load_carbon_intensity_data
+ModuleNotFoundError: No module named 'scripts.main_1'
+[2024-03-10T19:36:48.308+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:36:48.474+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_carbon_intensity.py took 0.384 seconds
+[2024-03-10T19:36:58.773+0000] {processor.py:157} INFO - Started process (PID=12632) to work on /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:36:58.804+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dag_carbon_intensity.py for tasks to queue
+[2024-03-10T19:36:58.858+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:36:58.857+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:36:59.203+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:36:59.140+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/dag_carbon_intensity.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_carbon_intensity.py", line 8, in <module>
+    from scripts.main_1 import load_carbon_intensity_data
+ModuleNotFoundError: No module named 'scripts.main_1'
+[2024-03-10T19:36:59.239+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:36:59.363+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_carbon_intensity.py took 0.596 seconds
+[2024-03-10T19:37:10.296+0000] {processor.py:157} INFO - Started process (PID=12637) to work on /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:37:10.310+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dag_carbon_intensity.py for tasks to queue
+[2024-03-10T19:37:10.352+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:37:10.352+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:37:10.577+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:37:10.554+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/dag_carbon_intensity.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_carbon_intensity.py", line 8, in <module>
+    from scripts.main_1 import load_carbon_intensity_data
+ModuleNotFoundError: No module named 'scripts.main_1'
+[2024-03-10T19:37:10.592+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:37:10.707+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_carbon_intensity.py took 0.422 seconds
+[2024-03-10T19:37:21.230+0000] {processor.py:157} INFO - Started process (PID=12642) to work on /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:37:21.256+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dag_carbon_intensity.py for tasks to queue
+[2024-03-10T19:37:21.286+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:37:21.285+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:37:24.029+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dag_carbon_intensity']) retrieved from /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:37:24.144+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:37:24.134+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-03-10T19:37:24.305+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:37:24.304+0000] {dag.py:3722} INFO - Setting next_dagrun for dag_carbon_intensity to 2024-03-10T00:00:00+00:00, run_after=2024-03-11T00:00:00+00:00
+[2024-03-10T19:37:24.407+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_carbon_intensity.py took 3.183 seconds
+[2024-03-10T19:37:35.387+0000] {processor.py:157} INFO - Started process (PID=12648) to work on /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:37:35.405+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dag_carbon_intensity.py for tasks to queue
+[2024-03-10T19:37:35.477+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:37:35.477+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:37:38.485+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dag_carbon_intensity']) retrieved from /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:37:38.611+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:37:38.600+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-03-10T19:37:38.710+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:37:38.710+0000] {dag.py:3722} INFO - Setting next_dagrun for dag_carbon_intensity to 2024-03-10T00:00:00+00:00, run_after=2024-03-11T00:00:00+00:00
+[2024-03-10T19:37:38.789+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_carbon_intensity.py took 3.407 seconds
+[2024-03-10T19:37:48.924+0000] {processor.py:157} INFO - Started process (PID=12654) to work on /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:37:48.927+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dag_carbon_intensity.py for tasks to queue
+[2024-03-10T19:37:48.930+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:37:48.929+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:37:49.601+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dag_carbon_intensity']) retrieved from /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:37:49.635+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:37:49.634+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-03-10T19:37:49.664+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:37:49.663+0000] {dag.py:3722} INFO - Setting next_dagrun for dag_carbon_intensity to 2024-03-10T00:00:00+00:00, run_after=2024-03-11T00:00:00+00:00
+[2024-03-10T19:37:49.685+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_carbon_intensity.py took 0.768 seconds
+[2024-03-10T19:37:59.843+0000] {processor.py:157} INFO - Started process (PID=12666) to work on /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:37:59.845+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dag_carbon_intensity.py for tasks to queue
+[2024-03-10T19:37:59.846+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:37:59.846+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:38:00.698+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dag_carbon_intensity']) retrieved from /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:38:00.732+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:38:00.731+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-03-10T19:38:00.758+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:38:00.758+0000] {dag.py:3722} INFO - Setting next_dagrun for dag_carbon_intensity to 2024-03-10T00:00:00+00:00, run_after=2024-03-11T00:00:00+00:00
+[2024-03-10T19:38:00.782+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_carbon_intensity.py took 0.945 seconds
+[2024-03-10T19:38:10.903+0000] {processor.py:157} INFO - Started process (PID=12675) to work on /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:38:10.906+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dag_carbon_intensity.py for tasks to queue
+[2024-03-10T19:38:10.909+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:38:10.909+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:38:11.583+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dag_carbon_intensity']) retrieved from /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:38:11.621+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:38:11.620+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-03-10T19:38:11.649+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:38:11.649+0000] {dag.py:3722} INFO - Setting next_dagrun for dag_carbon_intensity to 2024-03-10T00:00:00+00:00, run_after=2024-03-11T00:00:00+00:00
+[2024-03-10T19:38:11.671+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_carbon_intensity.py took 0.774 seconds
+[2024-03-10T19:38:21.795+0000] {processor.py:157} INFO - Started process (PID=12681) to work on /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:38:21.797+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dag_carbon_intensity.py for tasks to queue
+[2024-03-10T19:38:21.800+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:38:21.799+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:38:22.561+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dag_carbon_intensity']) retrieved from /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:38:22.599+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:38:22.597+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-03-10T19:38:22.633+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:38:22.632+0000] {dag.py:3722} INFO - Setting next_dagrun for dag_carbon_intensity to 2024-03-10T00:00:00+00:00, run_after=2024-03-11T00:00:00+00:00
+[2024-03-10T19:38:22.668+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_carbon_intensity.py took 0.878 seconds
+[2024-03-10T19:38:32.847+0000] {processor.py:157} INFO - Started process (PID=12687) to work on /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:38:32.850+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dag_carbon_intensity.py for tasks to queue
+[2024-03-10T19:38:32.851+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:38:32.851+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:38:33.409+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dag_carbon_intensity']) retrieved from /opt/airflow/dags/dag_carbon_intensity.py
+[2024-03-10T19:38:33.442+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:38:33.441+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-03-10T19:38:33.466+0000] {logging_mixin.py:154} INFO - [2024-03-10T19:38:33.466+0000] {dag.py:3722} INFO - Setting next_dagrun for dag_carbon_intensity to 2024-03-10T00:00:00+00:00, run_after=2024-03-11T00:00:00+00:00
+[2024-03-10T19:38:33.489+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_carbon_intensity.py took 0.648 seconds
