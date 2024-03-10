@@ -1,0 +1,77 @@
+[2024-03-10T15:48:43.983+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=dag_carbon_intensity/run_id=scheduled__2024-03-09T00:00:00+00:00/task_id=create_tables permission to 509
+[2024-03-10T15:48:44.769+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=dag_carbon_intensity/run_id=scheduled__2024-03-09T00:00:00+00:00/task_id=create_tables permission to 509
+[2024-03-10T15:48:45.054+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_carbon_intensity.create_tables scheduled__2024-03-09T00:00:00+00:00 [queued]>
+[2024-03-10T15:48:45.148+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_carbon_intensity.create_tables scheduled__2024-03-09T00:00:00+00:00 [queued]>
+[2024-03-10T15:48:45.193+0000] {taskinstance.py:1361} INFO - Starting attempt 3 of 4
+[2024-03-10T15:48:45.387+0000] {taskinstance.py:1382} INFO - Executing <Task(PostgresOperator): create_tables> on 2024-03-09 00:00:00+00:00
+[2024-03-10T15:48:45.462+0000] {standard_task_runner.py:57} INFO - Started process 2303 to run task
+[2024-03-10T15:48:45.480+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'dag_carbon_intensity', 'create_tables', 'scheduled__2024-03-09T00:00:00+00:00', '--job-id', '129', '--raw', '--subdir', 'DAGS_FOLDER/dag_carbon_intensity.py', '--cfg-path', '/tmp/tmpyc9s_j13']
+[2024-03-10T15:48:45.550+0000] {standard_task_runner.py:85} INFO - Job 129: Subtask create_tables
+[2024-03-10T15:48:45.912+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=dag_carbon_intensity/run_id=scheduled__2024-03-09T00:00:00+00:00/task_id=create_tables permission to 509
+[2024-03-10T15:48:46.134+0000] {task_command.py:416} INFO - Running <TaskInstance: dag_carbon_intensity.create_tables scheduled__2024-03-09T00:00:00+00:00 [running]> on host b90b2ddba1ac
+[2024-03-10T15:48:46.596+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_carbon_intensity' AIRFLOW_CTX_TASK_ID='create_tables' AIRFLOW_CTX_EXECUTION_DATE='2024-03-09T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-03-09T00:00:00+00:00'
+[2024-03-10T15:48:46.613+0000] {sql.py:274} INFO - Executing: CREATE TABLE IF NOT EXISTS craverolucio_coderhouse.carbon_intensity (
+    from_date VARCHAR(50) PRIMARY KEY,
+    to_date VARCHAR(50) SORTKEY,
+    intensity_max SMALLINT,
+    intensity_average SMALLINT,
+    intensity_min SMALLINT,
+    intensity_index VARCHAR(50)
+);
+
+CREATE TABLE IF NOT EXISTS craverolucio_coderhouse.carbon_intensity_stg (
+    from_date VARCHAR(50) PRIMARY KEY,
+    to_date VARCHAR(50) SORTKEY,
+    intensity_max SMALLINT,
+    intensity_average SMALLINT,
+    intensity_min SMALLINT,
+    intensity_index VARCHAR(50)
+);
+[2024-03-10T15:48:46.678+0000] {base.py:73} INFO - Using connection ID 'coderhouse_redshift' for task execution.
+[2024-03-10T15:48:47.506+0000] {base.py:73} INFO - Using connection ID 'coderhouse_redshift' for task execution.
+[2024-03-10T15:48:50.989+0000] {sql.py:418} INFO - Running statement: CREATE TABLE IF NOT EXISTS craverolucio_coderhouse.carbon_intensity (
+    from_date VARCHAR(50) PRIMARY KEY,
+    to_date VARCHAR(50) SORTKEY,
+    intensity_max SMALLINT,
+    intensity_average SMALLINT,
+    intensity_min SMALLINT,
+    intensity_index VARCHAR(50)
+);
+
+CREATE TABLE IF NOT EXISTS craverolucio_coderhouse.carbon_intensity_stg (
+    from_date VARCHAR(50) PRIMARY KEY,
+    to_date VARCHAR(50) SORTKEY,
+    intensity_max SMALLINT,
+    intensity_average SMALLINT,
+    intensity_min SMALLINT,
+    intensity_index VARCHAR(50)
+);, parameters: None
+[2024-03-10T15:48:51.875+0000] {logging_mixin.py:154} WARNING - /home/***/.local/lib/python3.8/site-packages/***/providers/common/sql/hooks/sql.py:423 UserWarning: DB-API extension cursor.connection used
+[2024-03-10T15:48:51.970+0000] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/redshift_connector/core.py", line 1767, in execute
+    ps = cache["ps"][key]
+KeyError: ('CREATE TABLE IF NOT EXISTS craverolucio_coderhouse.carbon_intensity (\n    from_date VARCHAR(50) PRIMARY KEY,\n    to_date VARCHAR(50) SORTKEY,\n    intensity_max SMALLINT,\n    intensity_average SMALLINT,\n    intensity_min SMALLINT,\n    intensity_index VARCHAR(50)\n);\n\nCREATE TABLE IF NOT EXISTS craverolucio_coderhouse.carbon_intensity_stg (\n    from_date VARCHAR(50) PRIMARY KEY,\n    to_date VARCHAR(50) SORTKEY,\n    intensity_max SMALLINT,\n    intensity_average SMALLINT,\n    intensity_min SMALLINT,\n    intensity_index VARCHAR(50)\n);', ())
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/common/sql/operators/sql.py", line 280, in execute
+    output = hook.run(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/common/sql/hooks/sql.py", line 392, in run
+    self._run_command(cur, sql_statement, parameters)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/common/sql/hooks/sql.py", line 423, in _run_command
+    cur.execute(sql_statement)
+  File "/home/airflow/.local/lib/python3.8/site-packages/redshift_connector/cursor.py", line 248, in execute
+    raise e
+  File "/home/airflow/.local/lib/python3.8/site-packages/redshift_connector/cursor.py", line 241, in execute
+    self._c.execute(self, operation, args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/redshift_connector/core.py", line 1848, in execute
+    self.handle_messages(cursor)
+  File "/home/airflow/.local/lib/python3.8/site-packages/redshift_connector/core.py", line 2140, in handle_messages
+    raise self.error
+redshift_connector.error.ProgrammingError: {'S': 'ERROR', 'C': '42601', 'M': 'cannot insert multiple commands into a prepared statement', 'F': '../src/pg/src/backend/tcop/postgres.c', 'L': '4157', 'R': 'exec_parse_message'}
+[2024-03-10T15:48:52.047+0000] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=dag_carbon_intensity, task_id=create_tables, execution_date=20240309T000000, start_date=20240310T154845, end_date=20240310T154852
+[2024-03-10T15:48:52.807+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 129 for task create_tables ({'S': 'ERROR', 'C': '42601', 'M': 'cannot insert multiple commands into a prepared statement', 'F': '../src/pg/src/backend/tcop/postgres.c', 'L': '4157', 'R': 'exec_parse_message'}; 2303)
+[2024-03-10T15:48:52.948+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2024-03-10T15:48:53.117+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

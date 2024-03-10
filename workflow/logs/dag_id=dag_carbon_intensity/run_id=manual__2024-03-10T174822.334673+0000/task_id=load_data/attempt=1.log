@@ -1,0 +1,25 @@
+[2024-03-10T17:48:38.321+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=dag_carbon_intensity/run_id=manual__2024-03-10T17:48:22.334673+00:00/task_id=load_data permission to 509
+[2024-03-10T17:48:38.469+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=dag_carbon_intensity/run_id=manual__2024-03-10T17:48:22.334673+00:00/task_id=load_data permission to 509
+[2024-03-10T17:48:38.625+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_carbon_intensity.load_data manual__2024-03-10T17:48:22.334673+00:00 [queued]>
+[2024-03-10T17:48:38.680+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_carbon_intensity.load_data manual__2024-03-10T17:48:22.334673+00:00 [queued]>
+[2024-03-10T17:48:38.684+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 4
+[2024-03-10T17:48:39.609+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): load_data> on 2024-03-10 17:48:22.334673+00:00
+[2024-03-10T17:48:39.654+0000] {standard_task_runner.py:57} INFO - Started process 1499 to run task
+[2024-03-10T17:48:39.675+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'dag_carbon_intensity', 'load_data', 'manual__2024-03-10T17:48:22.334673+00:00', '--job-id', '189', '--raw', '--subdir', 'DAGS_FOLDER/dag_carbon_intensity.py', '--cfg-path', '/tmp/tmp8366yyao']
+[2024-03-10T17:48:39.706+0000] {standard_task_runner.py:85} INFO - Job 189: Subtask load_data
+[2024-03-10T17:48:39.956+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=dag_carbon_intensity/run_id=manual__2024-03-10T17:48:22.334673+00:00/task_id=load_data permission to 509
+[2024-03-10T17:48:40.019+0000] {task_command.py:416} INFO - Running <TaskInstance: dag_carbon_intensity.load_data manual__2024-03-10T17:48:22.334673+00:00 [running]> on host 79a2d80783aa
+[2024-03-10T17:48:40.162+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_carbon_intensity' AIRFLOW_CTX_TASK_ID='load_data' AIRFLOW_CTX_EXECUTION_DATE='2024-03-10T17:48:22.334673+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-10T17:48:22.334673+00:00'
+[2024-03-10T17:48:40.166+0000] {utils.py:32} INFO - Obteniendo datos de https://api.carbonintensity.org.uk/intensity/stats/2024-03-09T00:00Z/2024-03-10T23:59Z/24...
+[2024-03-10T17:48:40.167+0000] {utils.py:33} INFO - Desde: 2024-03-09T00:00Z
+[2024-03-10T17:48:40.168+0000] {utils.py:34} INFO - Hasta: 2024-03-10T23:59Z
+[2024-03-10T17:48:44.484+0000] {utils.py:39} INFO - https://api.carbonintensity.org.uk/intensity/stats/2024-03-09T00:00Z/2024-03-10T23:59Z/24
+[2024-03-10T17:48:44.487+0000] {utils.py:40} INFO - Datos obtenidos exitosamente... Procesando datos...
+[2024-03-10T17:48:44.494+0000] {utils.py:52} INFO - Datos procesados exitosamente
+[2024-03-10T17:48:44.505+0000] {utils.py:89} INFO - Conectándose a la base de datos...
+[2024-03-10T17:48:44.508+0000] {utils.py:103} ERROR - Error al conectarse a la base de datos: 'schema'
+[2024-03-10T17:48:44.510+0000] {utils.py:155} ERROR - Error al cargar los datos en la base de datos: 'NoneType' object has no attribute 'connect'
+[2024-03-10T17:48:44.511+0000] {python.py:194} INFO - Done. Returned value was: None
+[2024-03-10T17:48:44.563+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=dag_carbon_intensity, task_id=load_data, execution_date=20240310T174822, start_date=20240310T174838, end_date=20240310T174844
+[2024-03-10T17:48:44.680+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2024-03-10T17:48:44.728+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

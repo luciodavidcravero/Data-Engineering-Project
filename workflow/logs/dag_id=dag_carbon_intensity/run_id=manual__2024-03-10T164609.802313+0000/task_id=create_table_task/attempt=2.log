@@ -1,0 +1,33 @@
+[2024-03-10T16:52:20.403+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=dag_carbon_intensity/run_id=manual__2024-03-10T16:46:09.802313+00:00/task_id=create_table_task permission to 509
+[2024-03-10T16:52:23.214+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=dag_carbon_intensity/run_id=manual__2024-03-10T16:46:09.802313+00:00/task_id=create_table_task permission to 509
+[2024-03-10T16:52:24.175+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_carbon_intensity.create_table_task manual__2024-03-10T16:46:09.802313+00:00 [queued]>
+[2024-03-10T16:52:24.200+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_carbon_intensity.create_table_task manual__2024-03-10T16:46:09.802313+00:00 [queued]>
+[2024-03-10T16:52:24.203+0000] {taskinstance.py:1361} INFO - Starting attempt 2 of 4
+[2024-03-10T16:52:24.273+0000] {taskinstance.py:1382} INFO - Executing <Task(PostgresOperator): create_table_task> on 2024-03-10 16:46:09.802313+00:00
+[2024-03-10T16:52:24.285+0000] {standard_task_runner.py:57} INFO - Started process 191 to run task
+[2024-03-10T16:52:24.297+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'dag_carbon_intensity', 'create_table_task', 'manual__2024-03-10T16:46:09.802313+00:00', '--job-id', '165', '--raw', '--subdir', 'DAGS_FOLDER/dag_carbon_intensity.py', '--cfg-path', '/tmp/tmpj4cegujw']
+[2024-03-10T16:52:24.306+0000] {standard_task_runner.py:85} INFO - Job 165: Subtask create_table_task
+[2024-03-10T16:52:24.463+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=dag_carbon_intensity/run_id=manual__2024-03-10T16:46:09.802313+00:00/task_id=create_table_task permission to 509
+[2024-03-10T16:52:24.479+0000] {task_command.py:416} INFO - Running <TaskInstance: dag_carbon_intensity.create_table_task manual__2024-03-10T16:46:09.802313+00:00 [running]> on host b90b2ddba1ac
+[2024-03-10T16:52:24.669+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_carbon_intensity' AIRFLOW_CTX_TASK_ID='create_table_task' AIRFLOW_CTX_EXECUTION_DATE='2024-03-10T16:46:09.802313+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-10T16:46:09.802313+00:00'
+[2024-03-10T16:52:24.674+0000] {sql.py:274} INFO - Executing: CREATE TABLE IF NOT EXISTS craverolucio_coderhouse.carbon_intensity (
+    from_date VARCHAR(50) PRIMARY KEY,
+    to_date VARCHAR(50) SORTKEY,
+    intensity_max SMALLINT,
+    intensity_average SMALLINT,
+    intensity_min SMALLINT,
+    intensity_index VARCHAR(50)
+);
+[2024-03-10T16:52:24.710+0000] {base.py:73} INFO - Using connection ID 'coderhouse_redshift' for task execution.
+[2024-03-10T16:52:25.702+0000] {base.py:73} INFO - Using connection ID 'coderhouse_redshift' for task execution.
+[2024-03-10T16:52:28.232+0000] {sql.py:418} INFO - Running statement: CREATE TABLE IF NOT EXISTS craverolucio_coderhouse.carbon_intensity (
+    from_date VARCHAR(50) PRIMARY KEY,
+    to_date VARCHAR(50) SORTKEY,
+    intensity_max SMALLINT,
+    intensity_average SMALLINT,
+    intensity_min SMALLINT,
+    intensity_index VARCHAR(50)
+);, parameters: None
+[2024-03-10T16:52:29.548+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=dag_carbon_intensity, task_id=create_table_task, execution_date=20240310T164609, start_date=20240310T165224, end_date=20240310T165229
+[2024-03-10T16:52:29.589+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2024-03-10T16:52:29.709+0000] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check

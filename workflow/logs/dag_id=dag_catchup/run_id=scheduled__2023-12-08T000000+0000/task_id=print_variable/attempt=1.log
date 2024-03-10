@@ -1,0 +1,18 @@
+[2024-03-08T01:49:04.922+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=dag_catchup/run_id=scheduled__2023-12-08T00:00:00+00:00/task_id=print_variable permission to 509
+[2024-03-08T01:49:05.123+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=dag_catchup/run_id=scheduled__2023-12-08T00:00:00+00:00/task_id=print_variable permission to 509
+[2024-03-08T01:49:05.421+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_catchup.print_variable scheduled__2023-12-08T00:00:00+00:00 [queued]>
+[2024-03-08T01:49:05.449+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_catchup.print_variable scheduled__2023-12-08T00:00:00+00:00 [queued]>
+[2024-03-08T01:49:05.452+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2024-03-08T01:49:05.584+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): print_variable> on 2023-12-08 00:00:00+00:00
+[2024-03-08T01:49:05.597+0000] {standard_task_runner.py:57} INFO - Started process 664 to run task
+[2024-03-08T01:49:05.615+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'dag_catchup', 'print_variable', 'scheduled__2023-12-08T00:00:00+00:00', '--job-id', '31', '--raw', '--subdir', 'DAGS_FOLDER/dag_catchup.py', '--cfg-path', '/tmp/tmpxjnn84bi']
+[2024-03-08T01:49:05.635+0000] {standard_task_runner.py:85} INFO - Job 31: Subtask print_variable
+[2024-03-08T01:49:05.876+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=dag_catchup/run_id=scheduled__2023-12-08T00:00:00+00:00/task_id=print_variable permission to 509
+[2024-03-08T01:49:05.894+0000] {task_command.py:416} INFO - Running <TaskInstance: dag_catchup.print_variable scheduled__2023-12-08T00:00:00+00:00 [running]> on host b90b2ddba1ac
+[2024-03-08T01:49:06.463+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_catchup' AIRFLOW_CTX_TASK_ID='print_variable' AIRFLOW_CTX_EXECUTION_DATE='2023-12-08T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-12-08T00:00:00+00:00'
+[2024-03-08T01:49:06.482+0000] {logging_mixin.py:154} INFO - Fecha de ejecucion: 2023-12-08T00:00:00+00:00
+ Prox fecha de ejecucion: 2023-12-09T00:00:00+00:00
+[2024-03-08T01:49:06.484+0000] {python.py:194} INFO - Done. Returned value was: None
+[2024-03-08T01:49:06.580+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=dag_catchup, task_id=print_variable, execution_date=20231208T000000, start_date=20240308T014905, end_date=20240308T014906
+[2024-03-08T01:49:06.867+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2024-03-08T01:49:07.542+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check
