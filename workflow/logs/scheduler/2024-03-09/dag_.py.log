@@ -1,7 +1,0 @@
-[2024-03-09T22:36:29.737+0000] {processor.py:157} INFO - Started process (PID=2303) to work on /opt/airflow/dags/dag_.py
-[2024-03-09T22:36:29.741+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/dag_.py for tasks to queue
-[2024-03-09T22:36:29.743+0000] {logging_mixin.py:154} INFO - [2024-03-09T22:36:29.742+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/dag_.py
-[2024-03-09T22:36:30.554+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dag_luchmeetnet_v2']) retrieved from /opt/airflow/dags/dag_.py
-[2024-03-09T22:36:30.580+0000] {logging_mixin.py:154} INFO - [2024-03-09T22:36:30.579+0000] {dag.py:2941} INFO - Sync 1 DAGs
-[2024-03-09T22:36:30.607+0000] {logging_mixin.py:154} INFO - [2024-03-09T22:36:30.607+0000] {dag.py:3722} INFO - Setting next_dagrun for dag_luchmeetnet_v2 to 2024-03-09T21:00:00+00:00, run_after=2024-03-09T22:00:00+00:00
-[2024-03-09T22:36:30.639+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dag_.py took 0.907 seconds
