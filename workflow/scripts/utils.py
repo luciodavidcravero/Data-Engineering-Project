@@ -1,3 +1,9 @@
+'''
+En este archivo se definen las funciones para ser utilizadas en el DAG "dag_carbon_intensity"
+'''
+
+#Import required libraries
+import pandas as pd
 import logging
 import json
 from configparser import ConfigParser
@@ -5,6 +11,8 @@ from datetime import datetime
 import requests
 from sqlalchemy import create_engine
 from pandas import json_normalize
+import smtplib
+from airflow.models import Variable
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
@@ -158,3 +166,51 @@ def load_to_sql(df, table_name, engine):
     
     except Exception as e:
         logging.error(f"Error al cargar los datos en la base de datos: {e}")
+
+def load_carbon_intensity_data(config_file, start, end):
+    """
+    Proceso ETL para los datos de Carbon Intensity de la API
+
+    Args:
+        config_file (.cfg): file with database credentials
+        start: fecha inicial
+        end: fecha final
+    """
+    base_url = 'https://api.carbonintensity.org.uk/intensity'
+    endpoint = 'stats'
+    try:
+        df_carbon_intensity = get_data(base_url,
+                                       endpoint,
+                                       start,
+                                       end,
+                                       24)
+        
+        engine = connect_to_db(config_file, "redshift")
+        load_to_sql(df_carbon_intensity, "carbon_intensity", engine)
+    except Exception as e:
+        logging.error(f"Error al obtener datos de {base_url}: {e}")
+        raise e
+
+def send_alert(**context):
+    """
+    Función para envío de alertas por email cuando un valor de la
+    intensidad de carbono está por fuera de los límites especificados
+    """
+    try:
+        x = smtplib.SMTP('smtp.gmail.com',587)
+        x.starttls()
+
+        x.login(
+            'craverolucio@gmail.com',
+            Variable.get('GMAIL_SECRET')
+        )
+
+        subject = f'Airflow reporte {context["dag"]} {context["ds"]}'
+        body_text = f'Tarea {context["task_instance_key_str"]} ejecutada'
+        message='Subject: {}\n\n{}'.format(subject,body_text)
+        
+        x.sendmail('craverolucio@gmail.com', 'craverolucio@gmail.com', message)
+        print('Success')
+    except Exception as exception:
+        print(exception)
+        print('Failure')

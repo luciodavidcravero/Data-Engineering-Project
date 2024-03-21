@@ -1,0 +1,9 @@
+[2024-03-20T20:51:17.359+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=dag_carbon_intensity/run_id=scheduled__2024-03-16T00:00:00+00:00/task_id=create_table_task permission to 509
+[2024-03-20T20:51:19.775+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=dag_carbon_intensity/run_id=scheduled__2024-03-16T00:00:00+00:00/task_id=create_table_task permission to 509
+[2024-03-20T20:51:22.324+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_carbon_intensity.create_table_task scheduled__2024-03-16T00:00:00+00:00 [queued]>
+[2024-03-20T20:51:22.909+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_carbon_intensity.create_table_task scheduled__2024-03-16T00:00:00+00:00 [queued]>
+[2024-03-20T20:51:22.931+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 4
+[2024-03-20T20:51:24.106+0000] {taskinstance.py:1382} INFO - Executing <Task(PostgresOperator): create_table_task> on 2024-03-16 00:00:00+00:00
+[2024-03-20T20:51:24.511+0000] {standard_task_runner.py:57} INFO - Started process 228 to run task
+[2024-03-20T20:51:24.753+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'dag_carbon_intensity', 'create_table_task', 'scheduled__2024-03-16T00:00:00+00:00', '--job-id', '256', '--raw', '--subdir', 'DAGS_FOLDER/dag_carbon_intensity.py', '--cfg-path', '/tmp/tmp0bgg319k']
+[2024-03-20T20:51:25.861+0000] {standard_task_runner.py:85} INFO - Job 256: Subtask create_table_task

@@ -5,7 +5,7 @@ from airflow.operators.dummy import DummyOperator
 from airflow.operators.python_operator import PythonOperator
 from airflow.providers.postgres.operators.postgres import PostgresOperator
 
-from scripts.main_1 import load_carbon_intensity_data
+from scripts.utils import load_carbon_intensity_data, send_alert
 
 default_args = {
     "retries": 3,
@@ -14,7 +14,7 @@ default_args = {
 
 with DAG(
     dag_id="dag_carbon_intensity",
-    start_date=datetime(2023, 11, 1),
+    start_date=datetime(2024, 1, 1),
     catchup=True,
     schedule_interval="@daily",
     default_args=default_args
@@ -52,6 +52,16 @@ with DAG(
             "end": "{{ data_interval_end }}"
         }
     )
+    
+    alert_task = PythonOperator(
+        task_id="alert_task",
+        python_callable=send_alert,
+        op_kwargs={
+            "xxx": "xxxxx",
+            "xxx": "xxx",
+            "xxx": "xxx"
+        }
+    )
 
     dummy_end_task = DummyOperator(
         task_id="end"
@@ -61,4 +71,5 @@ with DAG(
     dummy_start_task >> create_stage_table_task
     create_table_task >> load_data_task
     create_stage_table_task >> load_data_task
-    load_data_task >> dummy_end_task
+    load_data_task >> alert_task
+    alert_task >> dummy_end_task

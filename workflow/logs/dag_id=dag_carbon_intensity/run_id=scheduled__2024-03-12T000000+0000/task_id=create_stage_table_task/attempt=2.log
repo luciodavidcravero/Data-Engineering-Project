@@ -1,0 +1,6 @@
+[2024-03-20T21:01:14.665+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=dag_carbon_intensity/run_id=scheduled__2024-03-12T00:00:00+00:00/task_id=create_stage_table_task permission to 509
+[2024-03-20T21:01:30.385+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=dag_carbon_intensity/run_id=scheduled__2024-03-12T00:00:00+00:00/task_id=create_stage_table_task permission to 509
+[2024-03-20T21:01:40.921+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_carbon_intensity.create_stage_table_task scheduled__2024-03-12T00:00:00+00:00 [queued]>
+[2024-03-20T21:01:41.499+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_carbon_intensity.create_stage_table_task scheduled__2024-03-12T00:00:00+00:00 [queued]>
+[2024-03-20T21:01:42.084+0000] {taskinstance.py:1361} INFO - Starting attempt 2 of 4
+[2024-03-20T21:01:53.166+0000] {taskinstance.py:1382} INFO - Executing <Task(PostgresOperator): create_stage_table_task> on 2024-03-12 00:00:00+00:00
