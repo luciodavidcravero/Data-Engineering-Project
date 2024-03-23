@@ -1,0 +1,17 @@
+[2024-03-23T22:51:41.732+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=dag_carbon_intensity/run_id=manual__2024-03-23T22:51:00.402730+00:00/task_id=alert_task permission to 509
+[2024-03-23T22:51:41.853+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=dag_carbon_intensity/run_id=manual__2024-03-23T22:51:00.402730+00:00/task_id=alert_task permission to 509
+[2024-03-23T22:51:41.965+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_carbon_intensity.alert_task manual__2024-03-23T22:51:00.402730+00:00 [queued]>
+[2024-03-23T22:51:41.989+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_carbon_intensity.alert_task manual__2024-03-23T22:51:00.402730+00:00 [queued]>
+[2024-03-23T22:51:41.991+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 4
+[2024-03-23T22:51:42.017+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): alert_task> on 2024-03-23 22:51:00.402730+00:00
+[2024-03-23T22:51:42.027+0000] {standard_task_runner.py:57} INFO - Started process 1293 to run task
+[2024-03-23T22:51:42.034+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'dag_carbon_intensity', 'alert_task', 'manual__2024-03-23T22:51:00.402730+00:00', '--job-id', '402', '--raw', '--subdir', 'DAGS_FOLDER/dag_carbon_intensity.py', '--cfg-path', '/tmp/tmpj_fapy3s']
+[2024-03-23T22:51:42.039+0000] {standard_task_runner.py:85} INFO - Job 402: Subtask alert_task
+[2024-03-23T22:51:42.136+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=dag_carbon_intensity/run_id=manual__2024-03-23T22:51:00.402730+00:00/task_id=alert_task permission to 509
+[2024-03-23T22:51:42.154+0000] {task_command.py:416} INFO - Running <TaskInstance: dag_carbon_intensity.alert_task manual__2024-03-23T22:51:00.402730+00:00 [running]> on host a8049dd30460
+[2024-03-23T22:51:42.359+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_carbon_intensity' AIRFLOW_CTX_TASK_ID='alert_task' AIRFLOW_CTX_EXECUTION_DATE='2024-03-23T22:51:00.402730+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-23T22:51:00.402730+00:00'
+[2024-03-23T22:51:45.464+0000] {logging_mixin.py:154} INFO - Success
+[2024-03-23T22:51:45.470+0000] {python.py:194} INFO - Done. Returned value was: None
+[2024-03-23T22:51:45.555+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=dag_carbon_intensity, task_id=alert_task, execution_date=20240323T225100, start_date=20240323T225141, end_date=20240323T225145
+[2024-03-23T22:51:45.705+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2024-03-23T22:51:45.785+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

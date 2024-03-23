@@ -167,7 +167,7 @@ def load_to_sql(df, table_name, engine):
     except Exception as e:
         logging.error(f"Error al cargar los datos en la base de datos: {e}")
 
-def load_carbon_intensity_data(config_file, start, end):
+def load_carbon_intensity_data(config_file, start, end, ti):
     """
     Proceso ETL para los datos de Carbon Intensity de la API
 
@@ -187,15 +187,23 @@ def load_carbon_intensity_data(config_file, start, end):
         
         engine = connect_to_db(config_file, "redshift")
         load_to_sql(df_carbon_intensity, "carbon_intensity", engine)
+        
+        ti.xcom_push(key='intensity_max', value=df_carbon_intensity.loc[0, 'intensity_max'])
+        ti.xcom_push(key='intensity_index', value=df_carbon_intensity.loc[0, 'intensity_index'])
+        ti.xcom_push(key='date', value=df_carbon_intensity.loc[0, 'from_date'])
     except Exception as e:
         logging.error(f"Error al obtener datos de {base_url}: {e}")
         raise e
 
-def send_alert(**context):
+def send_alert(ti, **context):
     """
     Función para envío de alertas por email cuando un valor de la
     intensidad de carbono está por fuera de los límites especificados
     """
+    intensity_max = int(ti.xcom_pull(key='intensity_max', task_ids='load_data'))
+    intensity_index = str(ti.xcom_pull(key='intensity_index', task_ids='load_data'))
+    date = str(ti.xcom_pull(key='date', task_ids='load_data'))
+    
     try:
         x = smtplib.SMTP('smtp.gmail.com',587)
         x.starttls()
@@ -205,9 +213,15 @@ def send_alert(**context):
             Variable.get('GMAIL_SECRET')
         )
 
-        subject = f'Airflow reporte {context["dag"]} {context["ds"]}'
-        body_text = f'Tarea {context["task_instance_key_str"]} ejecutada'
-        message='Subject: {}\n\n{}'.format(subject,body_text)
+        if intensity_max>220 or intensity_index=='high':
+            subject = f'ALERT! Carbon intensity above normal values! ({date})'
+            body_text = f'Maximum intensity: {intensity_max}\nIndex: {intensity_index}'
+            message='Subject: {}\n\n{}'.format(subject,body_text)
+        else:
+            subject = f'Carbon intensity between normal values ({date})'
+            body_text = f'Maximum intensity: {intensity_max}\nIndex: {intensity_index}'
+            message='Subject: {}\n\n{}'.format(subject,body_text)
+            
         
         x.sendmail('craverolucio@gmail.com', 'craverolucio@gmail.com', message)
         print('Success')

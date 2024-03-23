@@ -56,11 +56,6 @@ with DAG(
     alert_task = PythonOperator(
         task_id="alert_task",
         python_callable=send_alert,
-        op_kwargs={
-            "xxx": "xxxxx",
-            "xxx": "xxx",
-            "xxx": "xxx"
-        }
     )
 
     dummy_end_task = DummyOperator(

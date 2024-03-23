@@ -1,7 +1,11 @@
+### ENTREGA FINAL
+Los archivos que corresponden a la entrega final son:
+- dag_carbon_intensity.py (ubicación: workflow/dags)
+- utils.py (ubicación: workflow/scripts)
+
 ### TERCERA ENTREGA:
 Los archivos que corresponden a la tercera entrega son:
 - dag_carbon_intensity.py (ubicación: workflow/dags)
-- main_1.py (ubicación: workflow/scripts)
 - utils.py (ubicación: workflow/scripts)
 
 ### SEGUNDA ENTREGA:
