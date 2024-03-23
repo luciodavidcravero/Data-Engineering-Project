@@ -2,6 +2,7 @@
 Los archivos que corresponden a la entrega final son:
 - dag_carbon_intensity.py (ubicación: workflow/dags)
 - utils.py (ubicación: workflow/scripts)
+- Carpeta con capturas del DAG en funcionamiento (ubicación: workflow/media)
 
 ### TERCERA ENTREGA:
 Los archivos que corresponden a la tercera entrega son:
